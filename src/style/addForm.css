@@ -1,0 +1,94 @@
+/* Overlay Background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* Form Container */
+.add-form-container {
+  background-color: white;
+  padding-inline: 5%;
+  padding-block: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(70, 70, 70);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-form-container h2 {
+  margin-block: 30px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.add-form-container h2::before{
+  content: "|";
+  color: gold;
+  margin-right: 3%;
+}
+
+.add-form-container label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.add-form-container input,
+.add-form-container textarea,
+.add-form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.add-form-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Buttons */
+.add-form-container button {
+  padding: 10px 20px;
+  margin-block: 30px  ;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-form-container button:hover {
+  background-color: #45a049;
+}
+
+.add-form-container button[type="button"] {
+  background-color: #f44336;
+}
+
+.add-form-container button[type="button"]:hover {
+  background-color: #e53935;
+}
+
+/* Actions container for buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmation-message{
+  color: rgb(0, 142, 0);
+}
+
+  

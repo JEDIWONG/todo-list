@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+}
+
+/* Ensure that the body is fully within the viewport */
+.page-container {
+  width: 100%;
+}
+
+/* Disable scrolling on mobile screens */
+@media (max-width: 768px) {
+  .page-container {
+    overflow-x: hidden; /* Disables scrolling */
+     
+  }
+}

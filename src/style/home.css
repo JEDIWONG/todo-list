@@ -1,0 +1,108 @@
+/* Basic styles */
+.task-list-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-inline: 20%;
+    margin-block: 50px;
+}
+  
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-inline: 20%;
+    align-items: center;
+}
+
+.filter-container p {
+    width: 60%;
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: end;
+}
+
+.filter-container p::after {
+    display: block;
+    content: "__________";
+    font-size: 24px;
+    color: goldenrod;
+}
+
+.filter-container select {
+    width: 15%;
+    padding-inline: 1%;
+    padding-block: 10px;
+    height: fit-content;
+    border-radius: 10px;
+    color: rgb(124, 124, 124);
+    margin-inline: 1%;
+}
+
+.sort-icon {
+    height: 50px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth rotation animation */
+    cursor: pointer;
+}
+
+.sort-icon:hover {
+    background-color: rgb(238, 238, 238);   
+}
+
+.sort-icon.rotated {
+    transform: rotate(180deg); /* Rotate 180 degrees */
+}
+
+/* Responsive Styles */
+
+/* For small devices (phones in portrait mode, less than 768px wide) */
+@media (max-width: 768px) {
+    .task-list-container {
+        margin-inline: 10%; /* Reduce margin on smaller screens */
+    }
+
+    .filter-container {
+        flex-direction: column; /* Stack filter elements vertically */
+        margin-inline: 10%;
+    }
+
+    .filter-container p {
+        width: 100%; /* Make paragraph take full width */
+        text-align: start; /* Align text to the start */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .filter-container select {
+        width: 100%; /* Make select input take full width */
+        margin-inline: 0; /* Remove horizontal margin */
+        margin-top: 10px; /* Add some spacing above */
+    }
+
+    .sort-icon {
+        height: 40px; /* Adjust height */
+    }
+    }
+
+    /* For very small screens (phones in portrait mode, less than 480px wide) */
+    @media (max-width: 480px) {
+    .task-list-container {
+        margin-inline: 5%; /* Even smaller margin for tiny screens */
+    }
+
+    .filter-container p {
+        font-size: 12px; /* Reduce font size even more */
+    }
+
+    .filter-container select {
+        width: 100%; /* Make select input full width */
+        font-size: 14px; /* Adjust font size for select input */
+    }
+
+    .sort-icon {
+        height: 35px; /* Smaller icon for very small screens */
+    }
+}
+  
